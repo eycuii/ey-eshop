@@ -1,0 +1,33 @@
+spring:
+  jackson:
+    time-zone: GMT+8
+    serialization:
+      FAIL_ON_EMPTY_BEANS: false
+    date-format: yyyy-MM-dd HH:mm:ss
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/ey_eshop?useUnicode=true&characterEncoding=GBK&serverTimezone=Asia/Shanghai&useSSL=false
+    username: root
+    password: 123123
+  redis:
+    host: localhost
+    port: 6379
+    timeout: 3000
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    local-cache-scope: statement # 禁用一级缓存
+    cache-enabled: false # 禁用二级缓存
+  #    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    banner: false
+
+springfox:
+  documentation:
+    swagger-ui:
+      enabled: true
