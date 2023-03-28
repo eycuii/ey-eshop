@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>ey-eshop-base</module>
         <module>ey-eshop-common</module>
         <module>ey-eshop-user-api</module>
         <module>ey-eshop-user-service</module>
@@ -34,6 +35,11 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.ey.eshop</groupId>
+                <artifactId>ey-eshop-base</artifactId>
+                <version>${eshop.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.ey.eshop</groupId>
                 <artifactId>ey-eshop-common</artifactId>
