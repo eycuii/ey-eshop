@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
 @Configuration
-@Import({WebConfig.class, GlobalExceptionHandler.class, SwaggerConfig.class,
+@Import({GlobalExceptionHandler.class, SwaggerConfig.class,
         MybatisPlusConfig.class, RedisConfig.class,
         FeignConfig.class})
 public class CommonAutoConfig {

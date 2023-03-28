@@ -1,0 +1,30 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: ey-eshop-user
+          uri: lb://ey-eshop-user
+          predicates:
+            - Path=/ey-eshop-user/**
+          filters:
+            - RewritePath=/ey-eshop-user/(?<segment>.*),/$\{segment}
+        - id: ey-eshop-product
+          uri: lb://ey-eshop-product
+          predicates:
+            - Path=/ey-eshop-product/**
+          filters:
+            - RewritePath=/ey-eshop-product/(?<segment>.*),/$\{segment}
+        - id: ey-eshop-inventory
+          uri: lb://ey-eshop-inventory
+          predicates:
+            - Path=/ey-eshop-inventory/**
+          filters:
+            - RewritePath=/ey-eshop-inventory/(?<segment>.*),/$\{segment}
+        - id: ey-eshop-order
+          uri: lb://ey-eshop-order
+          predicates:
+            - Path=/ey-eshop-order/**
+          filters:
+            - RewritePath=/ey-eshop-order/(?<segment>.*),/$\{segment}
+
+whitelist: /ey-eshop-user/login

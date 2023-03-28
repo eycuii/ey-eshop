@@ -12,6 +12,7 @@
     <modules>
         <module>ey-eshop-base</module>
         <module>ey-eshop-common</module>
+        <module>ey-eshop-gateway</module>
         <module>ey-eshop-user-api</module>
         <module>ey-eshop-user-service</module>
         <module>ey-eshop-product-api</module>

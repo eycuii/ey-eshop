@@ -2,7 +2,7 @@
 <configuration>
 
     <!-- 定义日志文件 输入位置 -->
-    <property name="LOG_DIR" value="./logs/product"/>
+    <property name="LOG_DIR" value="./logs/gateway"/>
 
     <!--单个文件大小,达到会被压缩和切割-->
     <property name="FILESIZE" value="100MB"/>

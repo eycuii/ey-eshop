@@ -14,7 +14,7 @@
     <dependencies>
         <dependency>
             <groupId>com.ey.eshop</groupId>
-            <artifactId>ey-eshop-common</artifactId>
+            <artifactId>ey-eshop-base</artifactId>
         </dependency>
     </dependencies>
 </project>
