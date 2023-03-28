@@ -27,6 +27,10 @@ mybatis-plus:
   global-config:
     banner: false
 
+feign:
+  okhttp:
+    enabled: true
+
 springfox:
   documentation:
     swagger-ui:
